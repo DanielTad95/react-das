@@ -4,7 +4,6 @@ function SideBar(){
     return (
         <nav role="navigation">
   <div className="menuToggle">
-    <input type="checkbox" />
     <span></span>
     <span></span>
     <span></span>
