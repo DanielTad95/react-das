@@ -5,6 +5,9 @@ import SideBar from './components/SideBar';
 import Footer from './components/Footer';
 
 import './App.css';
+
+
+
 class App extends React.Component {
     state = {
         country: "Armenia"

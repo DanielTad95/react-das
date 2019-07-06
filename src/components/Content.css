@@ -1,0 +1,9 @@
+.content_inner {
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.content_inner h1 {
+    margin: 0 auto;
+}
