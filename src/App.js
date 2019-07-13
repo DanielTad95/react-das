@@ -1,19 +1,21 @@
 import React from 'react';
-import { Container , Row, Col } from "reactstrap";
 
-import Header from './components/Header';
-import Content from './components/Content';
-import SideBar from './components/SideBar';
-import Footer from './components/Footer';
-
+import Web from './versions/Web';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect
+} from 'react-router-dom'
 import './App.css';
-
+import Register from './pages/Register'
+import withMobileSize from './withMobileSize';
 
 
 class App extends React.Component {
     state = {
-       isVisible:false
+        isVisible: false
     };
     constructor(props) {
         super(props);
@@ -21,28 +23,24 @@ class App extends React.Component {
     }
 
     handleOnToggle() {
-        this.setState({isVisible: !this.state.isVisible})
+        this.setState({ isVisible: !this.state.isVisible })
     }
 
     render() {
-        return (
-            <Container fluid>
-                <Header onToggleHandler={this.handleOnToggle} />
-                <Row>
-                    {
-                         this.state.isVisible && (  
-                            <Col md="3">
-                                <SideBar />
-                            </Col> 
-                        )     
-                    }
-                    <Col md={this.state.isVisible ? 9 : 12}>
-                        <Content />
-                    </Col>
-                </Row>
-                    <Footer />       
-            </Container>
+        return localStorage.getItem('user') ? (
+            <Router>
+                {
+                    this.props.width >= 992 && (
+                        <Web
+                            handleOnToggle={this.handleOnToggle}
+                            isVisible={this.state.isVisible}
+                        />
+                    )
+                }
+            </Router>
+        ) : (
+            <Register /> 
         )
     }
 }
-export default App;
+export default withMobileSize(App);

@@ -9,3 +9,17 @@ npm i --save react-router-dom
 HOC-High Oreder Component
 
  tnain nenc areq vor borger menyui bottonnery tani ira routneri vra , aranc refresh anelu Nav link
+
+HOC
+High Order Component
+js  functia , vercnuma parametr component 
+brauzerum ka hishoxutyan taracqner 
+Local Storege
+Session Storege
+iranc metodnern en .setItem .remove Item .clear .getItem
+.add Item -y yndunuma erku parametr (string)key,value
+.remove itemy yndunuma key menak stringov
+localsstorege.setItem("x","Hello")
+local hishoxutyuny mihst pahuma minjev jnjely , Session-y henc pakvuma brausery en jamanak pakvuma
+
+havaqel registraciai ejy

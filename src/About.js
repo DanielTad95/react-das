@@ -1,10 +1,10 @@
 import React from 'react';
-function Home() {
+function About(){
     return(
       <div>
-          barev
+          about
       </div>
     )
 }
 
-export default Home;
+export default About;

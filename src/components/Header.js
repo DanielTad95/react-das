@@ -1,19 +1,20 @@
 import React from 'react';
 import { Button } from 'reactstrap'
 import './Header.css';
+import { NavLink} from 'react-router-dom'
 function Header(props) {
     return (
         <>
             <nav className="nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Settings</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><NavLink to="/home">home</NavLink></li>
+                    <li><NavLink to="/about">about</NavLink></li>
+                    <li><NavLink to="/settings">settings</NavLink></li>
+                    <li><NavLink to="/contact">contact</NavLink></li>
                 </ul>
             </nav>
             <div>
-                <Button 
+                <Button
                     onClick={props.onToggleHandler}
                     type="button" 
                     color="primary">
