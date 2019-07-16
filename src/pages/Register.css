@@ -1,4 +1,9 @@
-
+/* .form {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 h1 {
     color: red;
 }
@@ -11,4 +16,5 @@ h1 {
     width: 250px;
     height: 150px;
     background-color: brown;
-}
+} */
+

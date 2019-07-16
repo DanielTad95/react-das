@@ -37,6 +37,13 @@ class App extends React.Component {
                         />
                     )
                 }
+                {
+                    this.props.width < 992 && this.props.width >= 515 && (
+                        <div>
+                            tablet version
+                        </div>
+                    )
+                }
             </Router>
         ) : (
             <Register /> 

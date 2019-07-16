@@ -23,3 +23,16 @@ localsstorege.setItem("x","Hello")
 local hishoxutyuny mihst pahuma minjev jnjely , Session-y henc pakvuma brausery en jamanak pakvuma
 
 havaqel registraciai ejy
+
+
+Form tag
+uni 3 atribod
+action,method,ontype
+action="rigister.php"
+merthod="GET/POST"
+submity uxarkuma infon backhand
+JSon  stringifile Json .parze kardal
+
+tanin registraciya ejum registr buttny sxmeluc lokal storegum inputnery kapom enq irar
+lokal storegum petqa lini user key 
+name email pasword

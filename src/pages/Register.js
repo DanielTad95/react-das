@@ -9,9 +9,6 @@ class Register extends Component {
                 <div className='form'>
                     <input></input>
                     <input></input>
-                    <input></input>
-
-
                 </div>
                 
                 </div>
